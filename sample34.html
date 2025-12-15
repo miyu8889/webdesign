@@ -12,7 +12,7 @@
            backgroung-repeat:repeat-y;
         }
         /* リセット CSS */
-        h1,h2,h3,ul,li!p{
+        h1,h2,h3,ul,li,p{
            margin:0;
            padding:0;
         }
@@ -31,6 +31,7 @@
         nav ul{
            padding-top:5px;
            padding-bottom:5px;
+           overflow:hidden;
            background-color:burlywood;
         }
         nav ul{list-style-type:none;}
@@ -47,15 +48,25 @@
         }
         /* メインコンテンツ CSS */
         main{
+           clear:both;
            width:620px;
            padding-top:10px;
            padding-bottom:10px;
            padding-left:20px;
            background-color:antiquewhite;
+           overflow:hidden;
         }
         h2{
            font-size:24px;
            color:arkred;
+        }
+        •sweets{
+           width:270px;
+           padding:10px;
+           margin-top:20px;
+           margin-right:20px;
+           float:left;
+           background-color:burlywood;
         }
         h3{
            font-size:20px;
@@ -63,8 +74,10 @@
         }
         /* フッター CSS */
         footer{
+            clear:both;
             width:600px;
             padding:20px;
+            text-align:right;
             background-color:bisque;
         }
         </style>
@@ -86,12 +99,12 @@
          <h2>今月のおすすめのスイーツ</h2>
          <p>今月のお勧めスイーツを紹介します。</p>
          <section class="sweets">
-　　　　　　<h3>モンブラン</h3>
+　　　　　　<h3  id="blanc">モンブラン</h3>
          <p>今年採れた国内産の栗を使用したケーキです。</p>
          <img src="images/Blanc2.jpg" alt="モンブランの写真">
          </section>
          <section class="sweets">
-         <h3>マカロン</h3>
+         <h3  id="macron">マカロン</h3>
          <p>沖縄産の砂糖を使用したマカロンです。</p>
 　　　　　　<img src="images/macron2.jpg" alt="マカロンの写真">
          </section>
